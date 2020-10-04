@@ -16,7 +16,7 @@
 
   <body>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-primary bg-light" style="font-weight: bold;">
+    <nav class="navbar navbar-expand-lg navbar-primary bg-light fixed-top" style="font-weight: bold;">
       <div class="container">
         <a class="navbar-brand" href="#">R</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
               <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Praktikum</a>
+              <a class="nav-link" href="#praktikum">Praktikum</a>
             </li>
             <li class="nav-item px-3">
               <a class="nav-link" href="#aboutMe">About Me</a>
@@ -51,6 +51,40 @@
         </div>
       </div>
     </section>
+
+    <!-- Praktikum Section -->
+    <section class="py-5">
+      <div class="container py-5">
+        <a name="praktikum">
+          <h2 class="text-lg lined">Praktikum</h2>
+        </a>
+        <p class="mb-4">This is my projects during Perancangan Aplikasi Berbasis Web course.</p>
+        <div class="row">
+          <div class="col-lg-3 mt-3">
+            <a class="btn btn-outline-primary" href="#">Praktikum 1 - Aritmatika</a>
+          </div>
+          <div class="col-lg-3 mt-3">
+            <a class="btn btn-outline-primary" href="#">Praktikum 2 - CRUD Data</a>
+          </div>
+          <div class="col-lg-3 mt-3">
+            <a class="btn btn-outline-primary" href="#">Tugas - CRUD Data Mahasiswa</a>
+          </div>
+          <div class="col-lg-3 mt-3">
+            <a class="btn btn-outline-primary" href="#">Praktikum 4 - CodeIgniter 4</a>
+          </div>
+          <div class="col-lg-3 mt-3">
+            <a class="btn btn-outline-primary" href="#">Praktikum 5 - CI & Bootstrap</a>
+          </div>
+          <div class="col-lg-3 mt-3">
+            <a class="btn btn-outline-primary" href="#" style="width: 100%;">Praktikum 6  - <br>...</a>
+          </div>
+          <div class="col-lg-3 mt-3">
+            <a class="btn btn-outline-primary" href="#" style="width: 100%;">Praktikum 7 - <br>...</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
     
     <!-- About Section-->
     <section class="py-5">
@@ -59,14 +93,12 @@
           <h2 class="text-lg lined">About me</h2>
         </a>
         <div class="row">
-          <div class="col-lg-6">
-            <p class="mb-4">I am currently studying as a third-year student at the School of Vocational Studies, majoring in Informatics Management at the IPB University.</p>
-            <img src="img/about.jpg" alt="Ice Bear" class="img-fluid rounded-circle" width="80%">
+          <p class="mb-4 ml-3">Hello, my name is Rima Nurkholifah. I am currently studying as a third-year student at the School of Vocational Studies, 
+                               majoring in Informatics Management at the IPB University. I’m a self proclaim learner.</p>
+          <div class="col-lg-6 mt-3">
+            <img src="img/about.jpg" alt="Ice Bear" class="img-fluid rounded-circle" width="70%">
           </div>
           <div class="col-lg-6">
-            <p class="mb-4">
-
-            </p><br><br><br>
             <div class="py-2 mb-2">
               <p class="small font-weight-bold text-muted text-uppercase mb-0">PHP</p>
               <div class="progress">
@@ -92,6 +124,12 @@
               </div>
             </div>
             <div class="py-2 mb-2">
+              <p class="small font-weight-bold text-muted text-uppercase mb-0">SQL</p>
+              <div class="progress">
+                <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 55%" class="progress-bar progress-primary-3"></div>
+              </div>
+            </div>
+            <div class="py-2 mb-2">
               <p class="small font-weight-bold text-muted text-uppercase mb-0">Tableau</p>
               <div class="progress">
                 <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 60%" class="progress-bar progress-primary-5"></div>
@@ -105,17 +143,17 @@
     <!-- Contact Section-->
     <div class="container py-5">
       <a name="contact">
-        <h2 class="h1 text-lg lined mb-5">Contact</h2>
+        <h2 class="h1 text-lg lined">Contact</h2>
       </a>
       <div class="row">
-        <div class="col-lg-6">
-          <p class="mb-4">Let's keep in touch. You can send me suggestions or criticisms.
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://github.com/petanidata" class="social-link github"><i class="fab fa-github"></i></a></li>
-            <li class="list-inline-item"><a href="https://instagram.com/rimanurfah" class="social-link instagram"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="mailto: rimanurkholifah@gmail.com" class="social-link email"><i class="fas fa-envelope"></i></a></li>
-          </ul>
-        </div>
+          <p class="mb-4 ml-3">Let's keep in touch. You can send me suggestions or criticisms.</p>
+          <div class="col-lg-12">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://github.com/petanidata" class="social-link github"><i class="fab fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://instagram.com/rimanurfah" class="social-link instagram"><i class="fab fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="mailto: rimanurkholifah@gmail.com" class="social-link email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+          </div>
       </div>
     </div>
     
@@ -136,8 +174,6 @@
     <!-- JavaScript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/leaflet.js"></script>
     <script src="js/front.js"></script>
 
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
