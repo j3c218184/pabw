@@ -80,34 +80,30 @@
           <a>
             <h2 class="text-lg lined" style="font-weight: bold;">Praktikum 2 - CRUD Data Mahasiswa</h2>
           </a>
-          <p class="mb-4">Pada pertemuan ke-2 ini, kami mengkoneksikan database ke webpages. Sehingga, kami dapat melakukan create, read, update, dan delete data mahasiswa.</p>
-          <h2 class="mb-3"> Form Isi Data Baru</h2>
+          <p class="mb-4">Pada pertemuan ke-2 ini, kami mengkoneksikan database ke webpages. Sehingga, dapat dilakukannya create, read, update, dan delete data mahasiswa.</p>
+          <h3>Data Mahasiswa</h3>
+          <form action="02_tambahdata.php">
+              <input class="btn btn-primary" type="submit" value="Tambah Data Baru"/>
+          </form>
+          <br>
 
-            <form>
-                Nama: <input type="text" name="nm"/>
-                <input class="btn btn-success" type="submit" name="sub" value="Simpan Data Baru">
-                <input class="btn btn-primary" type="submit" name="sub" value="Kembali ke Tampil Data" class="mb-2">
-
-                <?php
-                    //mengecheck apakah tombol sudah ditekan atau belum
-                    if(isset($_GET['sub'])){
-                        if($_GET['sub']=="Kembali ke Tampil Data"){
-                            header("location:index.php");
-                        }
-                        else{
-                            //strlen mengukur panjang string || tujuannya mengecek data kosong atau tidak
-                            if(strlen($_GET["nm"])){
-                                include "koneksi.php";
-                                mysqli_query($kon, "INSERT INTO `mahasiswa` (`id`, `nama`) VALUES (NULL, '".$_GET['nm']."')");
-                                echo "<br>Data <b>".$_GET['nm']."</b> telah disimpan ke database";
-                            }
-                            else{
-                                echo "<br>Data nama tidak boleh dikosongkan";
-                            }
-                        }
-                    }
-                ?>
-            </form>
+          <?php
+              include "koneksi.php";
+              $r=mysqli_query($kon, "SELECT * FROM mahasiswa");
+              $i=1;
+              while($brs=mysqli_fetch_assoc($r)){
+                  //echo $i++.".".$brs["nama"]."<br>";
+                  //membuat form, tombol edit dan tombol delete
+                  echo "<form action=\"03_aksi.php\">";
+                  echo $i++.". ".$brs["nama"];
+                  echo "&nbsp;&nbsp;&nbsp; <input class=\"btn btn-warning\" type=\"submit\" name=\"aksi\" value=\"Edit\">";
+                  echo "&nbsp;&nbsp;&nbsp; <input class=\"btn btn-danger\" type=\"submit\" name=\"aksi\" value=\"Hapus\">";
+                  echo "<p>";
+                  echo "<input type=\"hidden\" name=\"id\" value=\"".$brs["id"]."\">";
+                  echo "<input type=\"hidden\" name=\"nm\" value=\"".$brs["nama"]."\">";
+                  echo "</form>";
+              }
+          ?>
         </div>
       </section>
 

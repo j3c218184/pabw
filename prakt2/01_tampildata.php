@@ -14,7 +14,7 @@
         echo "<form action=\"03_aksi.php\">";
         echo $i++.". ".$brs["nama"];
         echo "&nbsp;&nbsp;&nbsp; <input type=\"submit\" name=\"aksi\" value=\"Edit\">";
-        echo "&nbsp;&nbsp;&nbsp; <input type=\"submit\" name=\"aksi\" value=\"Delete\">";
+        echo "&nbsp;&nbsp;&nbsp; <input type=\"submit\" name=\"aksi\" value=\"Hapus\">";
         echo "<p>";
         echo "<input type=\"hidden\" name=\"id\" value=\"".$brs["id"]."\">";
         echo "<input type=\"hidden\" name=\"nm\" value=\"".$brs["nama"]."\">";
