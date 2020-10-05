@@ -48,32 +48,26 @@
     <!-- navigation -->
     <nav class="navbar navbar-expand-lg navbar-primary bg-light fixed-top" style="font-weight: bold;">
         <div class="container">
-            <a class="navbar-brand" href="#">R</a>
+            <a class="navbar-brand" href="../index.html">R</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon bg-primary"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item px-3 active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Praktikum
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Praktikum 1 - Perhitungan</a>
-                    <a class="dropdown-item" href="#">Praktikum 2 - CRUD Data</a>
-                    <a class="dropdown-item" href="#">Tugas - CRUD Data Mahasiswa</a>
-                    <a class="dropdown-item" href="#">Praktikum 4 - CodeIgniter 4</a>
-                    <a class="dropdown-item" href="#">Praktikum 5 - CI & Bootstrap</a>
+                        <a class="dropdown-item" href="#">Praktikum 1 - Perhitungan</a>
+                        <a class="dropdown-item" href="../prakt2/">Praktikum 2 - CRUD Data</a>
+                        <a class="dropdown-item" href="../tugas2/">Tugas - CRUD Data Mahasiswa</a>
+                        <a class="dropdown-item" href="../prakt4/">Praktikum 4 - CodeIgniter 4</a>
+                        <a class="dropdown-item" href="../prakt5/">Praktikum 5 - CI & Bootstrap</a>
                     </div>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="#aboutMe">About Me</a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
             </div>
@@ -89,7 +83,7 @@
           <p class="mb-4">Pada pertemuan pertama ini, kami melakukan review materi PHP dengan membuat kalkulator sederhana.</p>
           <div class="row">
             <div class="col-lg-6 mt-3">
-              <a class="btn btn-primary btn-block" href="#">Aritmatika</a>
+              <a class="btn btn-primary btn-block">Aritmatika</a>
             </div>
             <div class="col-lg-6 mt-3">
                 <form action="akumulasi.php">

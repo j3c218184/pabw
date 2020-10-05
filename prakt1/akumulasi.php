@@ -62,18 +62,12 @@
                     Praktikum
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Praktikum 1 - Perhitungan</a>
-                    <a class="dropdown-item" href="#">Praktikum 2 - CRUD Data</a>
-                    <a class="dropdown-item" href="#">Tugas - CRUD Data Mahasiswa</a>
-                    <a class="dropdown-item" href="#">Praktikum 4 - CodeIgniter 4</a>
-                    <a class="dropdown-item" href="#">Praktikum 5 - CI & Bootstrap</a>
+                        <a class="dropdown-item" href="#">Praktikum 1 - Perhitungan</a>
+                        <a class="dropdown-item" href="../prakt2/">Praktikum 2 - CRUD Data</a>
+                        <a class="dropdown-item" href="../tugas2/">Tugas - CRUD Data Mahasiswa</a>
+                        <a class="dropdown-item" href="../prakt4/">Praktikum 4 - CodeIgniter 4</a>
+                        <a class="dropdown-item" href="../prakt5/">Praktikum 5 - CI & Bootstrap</a>
                     </div>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="#aboutMe">About Me</a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
             </div>
@@ -102,31 +96,38 @@
 
       <section class="py-5">
           <div class="container">
-            <!-- Form -->
-            <form method="GET">
-                <input type="number" name="bil"/>
-                <input type="submit" value="jumlahkan"/>
-                <?php
-                    if (isset($_GET['bil'])){
-                        if (isset($_GET['bils']))
-                            $data = $_GET['bils'];
-                        else
-                            $data = array();
+              <div class="row">
+                  <div class="col-lg-6">
+                      <input type="hidden"/>
+                  </div>
+              <div class="col-lg-6">
+                <!-- Form -->
+                <form method="GET">
+                    <input type="number" name="bil"/>
+                    <input type="submit" value="jumlahkan"/>
+                    <?php
+                        if (isset($_GET['bil'])){
+                            if (isset($_GET['bils']))
+                                $data = $_GET['bils'];
+                            else
+                                $data = array();
 
-                        array_push($data, $_GET['bil']);
-                        foreach($data as $x)
-                            echo '<input type="hidden" name="bils[]" value="'.$x.'"/>';
-                        echo "<p>";
-                        $sum = 0;
-                        foreach($data as $x){
-                            echo "$x <br>";
-                            $sum += $x; 
+                            array_push($data, $_GET['bil']);
+                            foreach($data as $x)
+                                echo '<input type="hidden" name="bils[]" value="'.$x.'"/>';
+                            echo "<p>";
+                            $sum = 0;
+                            foreach($data as $x){
+                                echo "$x <br>";
+                                $sum += $x; 
+                            }
+                            echo "----------- + <br> $sum";
+                        //print_r($data);
                         }
-                        echo "----------- + <br> $sum";
-                    //print_r($data);
-                    }
-                ?>
-            </form>
+                    ?>
+                </form>
+              </div>
+            </div>
           </div>
     </section>
 
