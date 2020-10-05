@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd"> 
         <div class="container">
-            <a class="navbar-brand">
+            <a class="navbar-brand" href="index.php">
                 <img src="img/logo.png" alt="Logo Hogwarts University" height="55">
                 <img src="img/hogwarts.png" alt="Hogwarts University" height="55">
             </a>
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/../index.html">Rima Nurkholifah (J3C218184)</a>
+                        <a class="nav-link" href="../index.html">Rima Nurkholifah (J3C218184)</a>
                     </li>
                 </ul>
             </div>
@@ -165,7 +165,6 @@
                 </div>
             </div>
         </form>
-
     </div>
 
     <!-- Optional JavaScript -->
