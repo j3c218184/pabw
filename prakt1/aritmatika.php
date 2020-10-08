@@ -8,39 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic">
-    <link rel="stylesheet" href="style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="../style.default.css" id="theme-stylesheet">
 
     <title>Praktikum 1</title>
 
     <!-- Styles -->
     <style>
-        @media (min-width: 992px) {
-            .text-lg {
-                font-size: 3.6rem !important;
-            }
-        }
         .lined::after {
-            content: '';
-            display: block;
             width: 22.25rem;
-            height: 2px;
-            margin: 1.25rem 0;
-            background: #2b90d9;
-        }
-        body {
-            font-family: "Open Sans", sans-serif;
-            font-size: 1rem;
-            font-weight: 300;
-            line-height: 1.5;
-            color: #212529;
-            background-color: #fff;
-        }
-        .b {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            max-width: 400px;
         }
     </style>
   </head>
@@ -55,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item px-3 active">
-                    <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
