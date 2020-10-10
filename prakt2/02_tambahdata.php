@@ -8,39 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic">
-    <link rel="stylesheet" href="style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="../style.default.css" id="theme-stylesheet">
 
-    <title>Praktikum 1</title>
+    <title>Praktikum 2</title>
 
-    <!-- Styles -->
+    <!-- Styles-->
     <style>
-        @media (min-width: 992px) {
-            .text-lg {
-                font-size: 3rem !important;
-            }
-        }
         .lined::after {
-            content: '';
-            display: block;
-            width: 18.25rem;
-            height: 2px;
-            margin: 1.25rem 0;
-            background: #2b90d9;
-        }
-        body {
-            font-family: "Open Sans", sans-serif;
-            font-size: 1rem;
-            font-weight: 300;
-            line-height: 1.5;
-            color: #212529;
-            background-color: #fff;
-        }
-        .b {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            max-width: 400px;
+            width: 22.25rem;
         }
     </style>
   </head>
@@ -65,8 +40,8 @@
                     <a class="dropdown-item" href="../prakt1">Praktikum 1 - Perhitungan</a>
                     <a class="dropdown-item" href="#">Praktikum 2 - CRUD Data</a>
                     <a class="dropdown-item" href="../tugas2/">Tugas - CRUD Data Mahasiswa</a>
-                    <a class="dropdown-item" href="../prakt4/">Praktikum 4 - CodeIgniter 4</a>
-                    <a class="dropdown-item" href="../prakt5/">Praktikum 5 - CI & Bootstrap</a>
+                    <a class="dropdown-item" href="../prakt4/public/">Praktikum 4 - CodeIgniter 4</a>
+                    <a class="dropdown-item" href="../prakt5/public/">Praktikum 5 - CI & Bootstrap</a>
                   </div>
               </li>
             </ul>
