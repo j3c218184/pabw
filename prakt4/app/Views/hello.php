@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic">
     <link rel="stylesheet" href="../../style.default.css" id="theme-stylesheet">
 
-    <title>Praktikum 1</title>
+    <title>Praktikum 4</title>
 
     <!-- Styles-->
     <style>
@@ -23,14 +23,14 @@
     <!-- navigation -->
     <nav class="navbar navbar-expand-lg navbar-primary bg-light fixed-top" style="font-weight: bold;">
         <div class="container">
-            <a class="navbar-brand" href="../">R</a>
+            <a class="navbar-brand" href="../../">R</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon bg-primary"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item px-3 active">
-                    <a class="nav-link" href="../">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../../">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
